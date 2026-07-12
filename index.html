@@ -13,7 +13,6 @@
 <div class="container" id="portfolio"></div>
 
 <script>
-
 const totalPages = 63;
 const container = document.getElementById("portfolio");
 
@@ -25,12 +24,13 @@ for (let i = 0; i < totalPages; i++) {
 
     img.loading = "lazy";
 
-    img.alt = `Portfolio Page ${i + 1}`;
+    img.onerror = function () {
+        this.remove();
+    };
 
     container.appendChild(img);
 
 }
-
 </script>
 
 </body>
