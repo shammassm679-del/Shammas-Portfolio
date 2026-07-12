@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAMMAS S M | Portfolio 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container" id="portfolio"></div>
+
+<script>
+
+const totalPages = 63;
+const container = document.getElementById("portfolio");
+
+for (let i = 0; i < totalPages; i++) {
+
+    const img = document.createElement("img");
+
+    img.src = `SHAMMAS PORTFOLIO (1)_compressed (1)-images-${i}.jpg`;
+
+    img.loading = "lazy";
+
+    img.alt = `Portfolio Page ${i + 1}`;
+
+    container.appendChild(img);
+
+}
+
+</script>
+
+</body>
+</html>
